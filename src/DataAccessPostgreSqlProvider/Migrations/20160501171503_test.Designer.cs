@@ -8,9 +8,10 @@ using DataAccessPostgreSqlProvider;
 namespace DataAccessPostgreSqlProvider.Migrations
 {
     [DbContext(typeof(DomainModelPostgreSqlContext))]
-    partial class DomainModelPostgreSqlContextModelSnapshot : ModelSnapshot
+    [Migration("20160501171503_test")]
+    partial class test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.0-rc1-16348");
